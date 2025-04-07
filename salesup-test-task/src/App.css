@@ -1,0 +1,181 @@
+/**
+ * Основные стили для приложения
+ * Включает стилизацию компонентов TestApp и ParamEditor
+ */
+
+/* Общие стили приложения */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Стили контейнера TestApp */
+.test-app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.test-app-title {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+.test-component-container {
+  margin-bottom: 30px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #4caf50;
+}
+
+.test-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.test-button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.test-button:hover {
+  background-color: #3e8e41;
+}
+
+.test-results {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.results-title {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.result-section {
+  margin-bottom: 20px;
+}
+
+.model-display {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.test-status {
+  font-weight: bold;
+}
+
+.test-passed {
+  color: #4caf50;
+}
+
+.test-failed {
+  color: #f44336;
+}
+
+.test-pending {
+  color: #ff9800;
+}
+
+/* Стили компонента ParamEditor */
+.param-editor {
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.param-editor-title {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.param-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.param-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.param-input label {
+  font-weight: 500;
+  color: #555;
+  font-size: 14px;
+}
+
+.param-input input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.param-input input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.param-input input::placeholder {
+  color: #aaa;
+}
+
+/* Стили для примера использования */
+.example-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.example-button {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.example-button:hover {
+  background-color: #0b7dda;
+}
